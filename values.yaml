@@ -8,11 +8,11 @@ service:
   type: ClusterIP
   port: 80
 ingress:
-  enabled: false
+  enabled: true
   className: nginx
   annotations: {}
   hosts:
-    - host: myapp.local
+    - host: local.io
       paths:
         - path: /
           pathType: Prefix
