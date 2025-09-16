@@ -2,7 +2,7 @@ replicaCount: 2
 nameOverride: "teste"
 image:
   repository: rmiguel/argocd-pr-env
-  tag: "49-aacf7b6f10618c8bfff93f36b32b3ba3aa66941b"
+  tag: "55-756244e0949f406c4aa6413bcaa4a65868a071ad"
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
@@ -12,7 +12,7 @@ ingress:
   className: nginx
   annotations: {}
   hosts:
-    - host: teste.local.io
+    - host: env-temp-v1.local.io
       paths:
         - path: /api/v1
           pathType: Prefix
