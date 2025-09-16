@@ -12,7 +12,7 @@ ingress:
   className: nginx
   annotations: {}
   hosts:
-    - host: local.io
+    - host: teste.local.io
       paths:
         - path: /
           pathType: Prefix

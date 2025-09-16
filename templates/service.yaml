@@ -10,4 +10,5 @@ spec:
     - port: {{ .Values.service.port }}
       targetPort: 8080
   selector:
-    app: {{ include "myapp.name" . }}
+    app.kubernetes.io/name: {{ include "myapp.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
